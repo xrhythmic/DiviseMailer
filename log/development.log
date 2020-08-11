@@ -329,3 +329,109 @@ Module not found: Error: Can't resolve 'jquery' in '/Users/xrhythmic/Documents/R
 Completed 200 OK in 5918ms (Views: 5897.5ms | ActiveRecord: 0.0ms | Allocations: 103503)
 
 
+Started GET "/" for ::1 at 2020-08-11 16:35:52 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 188)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e3fe8d3959db16e3f9f4
+Version: webpack 4.44.1
+Time: 1255ms
+Built at: 11/08/2020 16:35:56
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cc7fe10a6631009ad2c4.js    124 KiB  application  [emitted] [immutable]  application
+js/application-cc7fe10a6631009ad2c4.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-cc7fe10a6631009ad2c4.js js/application-cc7fe10a6631009ad2c4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 818 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/xrhythmic/Documents/RailsApp/DeviseMailer/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/xrhythmic/Documents/RailsApp/DeviseMailer/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+Completed 200 OK in 4002ms (Views: 3980.3ms | ActiveRecord: 0.0ms | Allocations: 19225)
+
+
+Started GET "/" for ::1 at 2020-08-11 16:37:59 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 75)
+Completed 500 Internal Server Error in 528ms (ActiveRecord: 0.0ms | Allocations: 83615)
+
+
+  
+ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.js
+and restart your server):
+    3: 	<head>
+    4: 		<title>Workspace</title>
+    5: 		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+    9: 	<body>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for ::1 at 2020-08-11 16:38:37 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms | Allocations: 14688)
+
+
+  
+ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.js
+and restart your server):
+    3: 	<head>
+    4: 		<title>Workspace</title>
+    5: 		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+    9: 	<body>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for ::1 at 2020-08-11 16:39:09 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 75)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms | Allocations: 15620)
+
+
+  
+ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.js
+and restart your server):
+    3: 	<head>
+    4: 		<title>DeviseMailer</title>
+    5: 		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+    9: 	<body>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for ::1 at 2020-08-11 16:39:51 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 74)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 6761)
+
+
