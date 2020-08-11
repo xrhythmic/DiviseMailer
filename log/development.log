@@ -296,3 +296,36 @@ Processing by PagesController#contact as HTML
 Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 3871)
 
 
+Started GET "/pages/contact" for ::1 at 2020-08-11 16:26:05 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 1.8ms | Allocations: 188)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ea42109ec734e78bca04
+Version: webpack 4.44.1
+Time: 1464ms
+Built at: 11/08/2020 16:26:11
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-150a450621c736449919.js    124 KiB  application  [emitted] [immutable]  application
+js/application-150a450621c736449919.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-150a450621c736449919.js js/application-150a450621c736449919.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/xrhythmic/Documents/RailsApp/DeviseMailer/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/xrhythmic/Documents/RailsApp/DeviseMailer/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+Completed 200 OK in 5918ms (Views: 5897.5ms | ActiveRecord: 0.0ms | Allocations: 103503)
+
+
