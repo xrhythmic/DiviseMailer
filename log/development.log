@@ -2253,3 +2253,24 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 8476)
 
 
+Started GET "/" for ::1 at 2020-08-14 13:54:15 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 5)
+  Rendered layouts/_nav.html.erb (Duration: 0.8ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 92ms (Views: 88.5ms | ActiveRecord: 0.0ms | Allocations: 7516)
+
+
+Started GET "/" for ::1 at 2020-08-14 14:27:25 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 691)
+  Rendered layouts/_nav.html.erb (Duration: 1.2ms | Allocations: 300)
+  Rendered layouts/_foot.html.erb (Duration: 1.2ms | Allocations: 108)
+Completed 200 OK in 814ms (Views: 807.4ms | ActiveRecord: 0.0ms | Allocations: 172379)
+
+
