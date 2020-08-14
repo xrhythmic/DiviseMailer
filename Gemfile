@@ -16,9 +16,11 @@ gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-rails'
+gem 'jbuilder', '~> 2.7'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'

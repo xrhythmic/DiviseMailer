@@ -62,7 +62,7 @@ GEM
       execjs
     bcrypt (3.1.15)
     bindex (0.8.1)
-    bootsnap (1.4.7)
+    bootsnap (1.4.8)
       msgpack (~> 1.0)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
@@ -245,7 +245,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
-  bootstrap-sass (~> 3.3, >= 3.3.6)
+  bootstrap-sass (~> 3.4.1)
   bootstrap-sass-extras (~> 0.0.2)
   byebug
   capybara (>= 2.15)
@@ -261,6 +261,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.2)
   rails_12factor (~> 0.0.3)
   sass-rails (>= 6)
+  sassc-rails (>= 2.1.0)
   selenium-webdriver
   simple_form
   spring
