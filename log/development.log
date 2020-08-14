@@ -1907,3 +1907,24 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 7576)
 
 
+Started GET "/" for ::1 at 2020-08-14 11:58:07 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 302)
+  Rendered layouts/_nav.html.erb (Duration: 0.9ms | Allocations: 295)
+  Rendered layouts/_foot.html.erb (Duration: 0.5ms | Allocations: 108)
+Completed 200 OK in 111ms (Views: 97.5ms | ActiveRecord: 0.0ms | Allocations: 38197)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-14 11:58:11 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 514)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 44.5ms | Allocations: 16186)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 78ms (Views: 56.8ms | ActiveRecord: 0.7ms | Allocations: 35611)
+
+
