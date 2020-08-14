@@ -435,3 +435,85 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 6761)
 
 
+Started GET "/" for ::1 at 2020-08-14 09:19:59 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 188)
+Completed 200 OK in 98ms (Views: 90.9ms | ActiveRecord: 0.0ms | Allocations: 15743)
+
+
+Started GET "/" for ::1 at 2020-08-14 09:25:12 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5676)
+
+
+Started GET "/" for ::1 at 2020-08-14 09:28:04 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 156)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6985)
+
+
+Started GET "/" for ::1 at 2020-08-14 09:28:12 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_nav.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5747)
+
+
+Started GET "/" for ::1 at 2020-08-14 09:33:36 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 74)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 120)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 6952)
+
+
+Started GET "/" for ::1 at 2020-08-14 09:43:26 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 75)
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 119)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6953)
+
+
+Started GET "/" for ::1 at 2020-08-14 09:54:33 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+Completed 500 Internal Server Error in 274ms (ActiveRecord: 0.0ms | Allocations: 48488)
+
+
+  
+ActionView::Template::Error (Error: property "line" must be followed by a ':'
+        on line 41:1 of app/assets/stylesheets/footer.css.scss
+>> line
+
+   ^
+):
+    2: <html>
+    3: 	<head>
+    4: 		<title>DeviseMailer</title>
+    5: 		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 		<%= csrf_meta_tags %>
+    7: 	</head>
+    8: 	<body>
+  
+app/assets/stylesheets/footer.css.scss:41
+app/views/layouts/application.html.erb:5
+Started GET "/" for ::1 at 2020-08-14 09:57:28 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered layouts/_foot.html.erb (Duration: 0.8ms | Allocations: 108)
+Completed 200 OK in 461ms (Views: 460.5ms | ActiveRecord: 0.0ms | Allocations: 88838)
+
+
