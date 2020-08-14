@@ -19,6 +19,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-rails'
+gem 'jquery-turbolinks', '~> 2.1'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
 
 gem 'bootstrap-sass-extras', '~> 0.0.2'
