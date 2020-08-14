@@ -517,3 +517,47 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 461ms (Views: 460.5ms | ActiveRecord: 0.0ms | Allocations: 88838)
 
 
+Started GET "/" for ::1 at 2020-08-14 10:02:55 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5872)
+
+
+Started GET "/" for ::1 at 2020-08-14 10:08:02 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms | Allocations: 16529)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: font-awesome-sprockets.
+        on line 19:1 of app/assets/stylesheets/application.css.scss
+>> @import "font-awesome-sprockets";
+
+   ^
+):
+    2: <html>
+    3: 	<head>
+    4: 		<title>DeviseMailer</title>
+    5: 		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 		<%= csrf_meta_tags %>
+    7: 	</head>
+    8: 	<body>
+  
+app/assets/stylesheets/application.css.scss:19
+app/views/layouts/application.html.erb:5
+Started GET "/" for ::1 at 2020-08-14 10:08:46 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 188)
+  Rendered layouts/_nav.html.erb (Duration: 0.9ms | Allocations: 126)
+  Rendered layouts/_foot.html.erb (Duration: 0.5ms | Allocations: 108)
+Completed 200 OK in 781ms (Views: 775.7ms | ActiveRecord: 0.0ms | Allocations: 168291)
+
+
