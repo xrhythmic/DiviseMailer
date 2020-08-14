@@ -2016,3 +2016,240 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7935)
 
 
+Started GET "/" for ::1 at 2020-08-14 12:56:23 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 835)
+  Rendered layouts/_nav.html.erb (Duration: 1.3ms | Allocations: 295)
+  Rendered layouts/_foot.html.erb (Duration: 0.9ms | Allocations: 108)
+Completed 200 OK in 109ms (Views: 103.2ms | ActiveRecord: 0.0ms | Allocations: 30824)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-14 12:56:31 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 518)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 48.5ms | Allocations: 15501)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 81ms (Views: 61.9ms | ActiveRecord: 0.6ms | Allocations: 35318)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-14 12:56:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 200)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 9004)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 18287)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-14 12:56:42 +0100
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:56:42 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 7946)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-14 12:56:45 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 8483)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 16542)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-14 12:56:56 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"EXoKt60VyXGfEar8W9tD8LB3Un2/NPQe+0M90hQbuJdbYADZzioiWdI3byWPhqEc3fdvbGYkJ2D+uHdWVF4oLg==", "user"=>{"email"=>"jordprice23@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jordprice23@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 226ms (ActiveRecord: 0.8ms | Allocations: 5380)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:56:56 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 8140)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-14 12:57:01 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1870)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:57:01 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 7948)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-14 12:57:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1803)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:57:01 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 8119)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-14 12:57:02 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1801)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:57:02 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 7936)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-14 12:57:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1786)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:57:03 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 7937)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-14 12:57:05 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms | Allocations: 2558)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:57:05 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 8143)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-14 12:57:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 8517)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 16778)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-14 12:57:21 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 6390)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 14578)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-14 12:57:22 +0100
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Started GET "/" for ::1 at 2020-08-14 12:57:22 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7925)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-14 12:57:23 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 8500)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 16758)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-14 12:57:26 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 6389)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 14574)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /Users/xrhythmic/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+Started GET "/users/sign_up" for ::1 at 2020-08-14 13:17:15 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.4ms | Allocations: 878)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 53.8ms | Allocations: 16786)
+  Rendered layouts/_nav.html.erb (Duration: 0.9ms | Allocations: 272)
+  Rendered layouts/_foot.html.erb (Duration: 1.0ms | Allocations: 108)
+Completed 200 OK in 1233ms (Views: 1196.6ms | ActiveRecord: 1.0ms | Allocations: 227212)
+
+
+Started GET "/" for ::1 at 2020-08-14 13:17:22 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 77)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered layouts/_foot.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 8476)
+
+
